@@ -16,13 +16,13 @@ go 1.26.4
 // 2026-06 to decomplect optional TEE custody from the threshold core.
 require (
 	github.com/google/go-sev-guest v0.14.1
-	github.com/luxfi/corona v0.7.6
+	github.com/luxfi/corona v0.10.2
 	github.com/luxfi/magnetar v1.2.0
 	github.com/luxfi/mpc v1.14.13
-	github.com/luxfi/pulsar v1.1.1
+	github.com/luxfi/pulsar v1.7.1
 )
 
-require golang.org/x/crypto v0.49.0
+require golang.org/x/crypto v0.52.0
 
 require (
 	cloud.google.com/go v0.123.0 // indirect
@@ -61,6 +61,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.35.13 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.41.6 // indirect
 	github.com/aws/smithy-go v1.24.2 // indirect
+	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/cloudflare/circl v1.6.3 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -78,25 +79,30 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.3.14 // indirect
 	github.com/googleapis/gax-go/v2 v2.21.0 // indirect
 	github.com/gorilla/rpc v1.2.1 // indirect
+	github.com/grandcat/zeroconf v1.0.0 // indirect
 	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
-	github.com/luxfi/accel v1.1.2 // indirect
+	github.com/luxfi/accel v1.1.9 // indirect
 	github.com/luxfi/cache v1.2.1 // indirect
 	github.com/luxfi/compress v0.0.5 // indirect
 	github.com/luxfi/concurrent v0.0.3 // indirect
-	github.com/luxfi/crypto v1.19.10 // indirect
+	github.com/luxfi/crypto v1.19.17 // indirect
 	github.com/luxfi/database v1.18.3 // indirect
 	github.com/luxfi/hsm v1.1.3 // indirect
 	github.com/luxfi/ids v1.2.9 // indirect
 	github.com/luxfi/lattice/v7 v7.1.4 // indirect
 	github.com/luxfi/math v1.4.1 // indirect
 	github.com/luxfi/math/big v0.1.0 // indirect
+	github.com/luxfi/mdns v0.1.1 // indirect
 	github.com/luxfi/metric v1.5.7 // indirect
+	github.com/luxfi/mlwe v0.2.1 // indirect
 	github.com/luxfi/mock v0.1.1 // indirect
+	github.com/luxfi/zap v0.7.2 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
+	github.com/miekg/dns v1.1.72 // indirect
 	github.com/miekg/pkcs11 v1.1.1 // indirect
 	github.com/montanaflynn/stats v0.9.0 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect
@@ -116,12 +122,14 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
 	golang.org/x/exp v0.0.0-20260312153236-7ab1446f8b90 // indirect
-	golang.org/x/net v0.52.0 // indirect
+	golang.org/x/mod v0.36.0 // indirect
+	golang.org/x/net v0.55.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
-	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.35.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
+	golang.org/x/tools v0.45.0 // indirect
 	google.golang.org/api v0.275.0 // indirect
 	google.golang.org/genproto v0.0.0-20260406210006-6f92a3bedf2d // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260401024825-9d38bb4040a9 // indirect
