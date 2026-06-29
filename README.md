@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="tee" width="880"></p>
+
 # luxfi/tee
 
 Optional TEE-backed threshold-signing **custody** extension for the Lux
