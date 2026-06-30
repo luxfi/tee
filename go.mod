@@ -16,10 +16,10 @@ go 1.26.4
 // 2026-06 to decomplect optional TEE custody from the threshold core.
 require (
 	github.com/google/go-sev-guest v0.14.1
-	github.com/luxfi/corona v0.10.2
+	github.com/luxfi/corona v0.10.3
 	github.com/luxfi/magnetar v1.2.0
 	github.com/luxfi/mpc v1.14.13
-	github.com/luxfi/pulsar v1.7.1
+	github.com/luxfi/pulsar v1.8.0
 )
 
 require golang.org/x/crypto v0.52.0
