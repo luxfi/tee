@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	pulsar "github.com/luxfi/pulsar/ref/go/pkg/pulsar"
+	pulsar "github.com/luxfi/pulsar/pkg/pulsar"
 )
 
 // Config carries the operator-side policy + provider configuration.

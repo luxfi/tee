@@ -15,7 +15,7 @@ import (
 	sevtest "github.com/google/go-sev-guest/testing"
 	"github.com/google/go-sev-guest/verify/trust"
 
-	pulsar "github.com/luxfi/pulsar/ref/go/pkg/pulsar"
+	pulsar "github.com/luxfi/pulsar/pkg/pulsar"
 
 	"github.com/luxfi/mpc/cc/attest"
 	"github.com/luxfi/mpc/pkg/approval"

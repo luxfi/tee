@@ -19,7 +19,7 @@ require (
 	github.com/luxfi/corona v0.10.3
 	github.com/luxfi/magnetar v1.2.0
 	github.com/luxfi/mpc v1.14.13
-	github.com/luxfi/pulsar v1.8.0
+	github.com/luxfi/pulsar v1.9.0
 )
 
 require golang.org/x/crypto v0.52.0
@@ -89,7 +89,7 @@ require (
 	github.com/luxfi/database v1.18.3 // indirect
 	github.com/luxfi/dkg v0.3.5 // indirect
 	github.com/luxfi/hsm v1.1.3 // indirect
-	github.com/luxfi/ids v1.2.9 // indirect
+	github.com/luxfi/ids v1.3.0 // indirect
 	github.com/luxfi/lattice/v7 v7.1.4 // indirect
 	github.com/luxfi/math v1.4.1 // indirect
 	github.com/luxfi/math/big v0.1.0 // indirect
@@ -97,7 +97,7 @@ require (
 	github.com/luxfi/mlwe v0.2.1 // indirect
 	github.com/luxfi/mock v0.1.1 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
-	github.com/mattn/go-isatty v0.0.20 // indirect
+	github.com/mattn/go-isatty v0.0.21 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/miekg/pkcs11 v1.1.1 // indirect
 	github.com/montanaflynn/stats v0.9.0 // indirect

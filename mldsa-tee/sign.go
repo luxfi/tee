@@ -8,7 +8,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	pulsar "github.com/luxfi/pulsar/ref/go/pkg/pulsar"
+	pulsar "github.com/luxfi/pulsar/pkg/pulsar"
 
 	"github.com/luxfi/mpc/pkg/approval"
 )
