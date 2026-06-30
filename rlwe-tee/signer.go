@@ -97,7 +97,7 @@ func (s *Signer) Provision(ctx context.Context) (*coronaThreshold.GroupKey, erro
 	// bytes.Reader so the run is reproducible. coronaSerializer
 	// guards the corona-internal global writes.
 	coronaSerializer.Lock()
-	_, gk, err := coronaThreshold.GenerateKeys(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
+	_, gk, err := coronaThreshold.GenerateKeysTrustedDealer(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
 	coronaSerializer.Unlock()
 	if err != nil {
 		return nil, fmt.Errorf("rlwe-tee: provision: GenerateKeys: %w", err)
@@ -118,7 +118,7 @@ func (s *Signer) PublicKey(ctx context.Context) (*coronaThreshold.GroupKey, erro
 		return nil, fmt.Errorf("rlwe-tee: PublicKey: key length %d does not match MasterKeySize %d", len(key), MasterKeySize)
 	}
 	coronaSerializer.Lock()
-	_, gk, err := coronaThreshold.GenerateKeys(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
+	_, gk, err := coronaThreshold.GenerateKeysTrustedDealer(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
 	coronaSerializer.Unlock()
 	if err != nil {
 		return nil, fmt.Errorf("rlwe-tee: PublicKey: GenerateKeys: %w", err)

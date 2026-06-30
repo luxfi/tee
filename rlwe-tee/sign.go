@@ -63,7 +63,7 @@ func (s *Signer) Sign(ctx context.Context, env *Envelope, jobID [32]byte, msg []
 	// (sign.K, sign.Threshold) and per-party internal state are
 	// written by every party in this sequence.
 	coronaSerializer.Lock()
-	shares, gk, err := coronaThreshold.GenerateKeys(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
+	shares, gk, err := coronaThreshold.GenerateKeysTrustedDealer(s.cfg.Threshold, s.cfg.Participants, bytes.NewReader(key))
 	if err != nil {
 		coronaSerializer.Unlock()
 		return nil, nil, fmt.Errorf("%w: GenerateKeys: %v", ErrCorruptWrappedSeed, err)
@@ -122,7 +122,10 @@ func (s *Signer) runCoronaThresholdSign(jobID [32]byte, msg []byte, shares []*co
 
 	r1Data := make(map[int]*coronaThreshold.Round1Data, n)
 	for _, signer := range signers {
-		r1 := signer.Round1(sessionID, prfKey, signerIDs)
+		r1, err := signer.Round1(sessionID, prfKey, signerIDs)
+		if err != nil {
+			return nil, fmt.Errorf("round1: %w", err)
+		}
 		r1Data[r1.PartyID] = r1
 	}
 
